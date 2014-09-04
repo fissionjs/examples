@@ -5,4 +5,3 @@
 ### Todos:
 #### Simple memorystore (coffee)
 #### REST endpoint
-
