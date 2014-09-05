@@ -1,17 +1,17 @@
-  var fission = require('../../app');
+var fission = require('../../app');
 
-  var Todo = require('../../models/Todo');
+var Todo = require('../../models/Todo');
 
-  var DOM = fission.React.DOM;
-  var div = DOM.div;
-  var h1 = DOM.h1;
-  var h3 = DOM.h3;
-  var a = DOM.a;
-  var button = DOM.button;
-  var br = DOM.br;
-  var span = DOM.span;
-  var input = DOM.input;
-  var img = DOM.img;
+var DOM = fission.React.DOM;
+var div = DOM.div;
+var h1 = DOM.h1;
+var h3 = DOM.h3;
+var a = DOM.a;
+var button = DOM.button;
+var br = DOM.br;
+var span = DOM.span;
+var input = DOM.input;
+var img = DOM.img;
 
 var itemView = fission.modelView({
   model: Todo,
