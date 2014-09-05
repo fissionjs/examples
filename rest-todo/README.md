@@ -1,9 +1,8 @@
-## Simple Todo
+## REST Todo
+
 
 - Memory store
-- Coffee-Script
-
-
+- Simple REST endpoint
 
 Install dependencies: `npm install`
 
