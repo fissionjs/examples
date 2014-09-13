@@ -25,7 +25,7 @@ module.exports =
     itemView: itemView
     addTodo: (e) ->
       if e.which is 13
-        @collection.create text: e.target.value, done: false, id: Math.floor(Math.random() * (100 - 1)) + 1
+        @collection.create text: e.target.value, done: false
         console.log @collection
         e.target.value = ''
 
