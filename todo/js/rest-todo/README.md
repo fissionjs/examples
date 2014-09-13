@@ -4,7 +4,7 @@
 - Memory store
 - Simple REST endpoint
 
-![screenshot](https://raw.githubusercontent.com/fissionjs/examples/master/rest-todo/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/fissionjs/examples/master/todo/js/rest-todo/screenshot.png)
 
 
 Install dependencies: `npm install`

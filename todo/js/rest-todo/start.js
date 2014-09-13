@@ -16,7 +16,7 @@ app.use(function(err, req, res, next) {
 
 var Todos = [
   {
-    _id: '1',
+    id: '1',
     text: 'Make a REST example',
     done: true
   }
@@ -27,15 +27,21 @@ app.route('/v1/todos')
     res.status(200).json(Todos);
   })
   .post(function(req, res){
-    if (req.body._id){
+    if (req.body.id){
       return console.log('Got POST'+ req.body);
     }
     var item = req.body;
     var last = Todos[Todos.length - 1];
-    item._id = String(Number(last._id) + 1);
+    if(!last){
+      last = {
+        id: 0
+      };
+    }
+
+    item.id = String(Number(last.id) + 1);
     Todos.push(item);
     res.status(200).json(item);
-    console.log('CREATED: ' + item._id);
+    console.log('CREATED: ' + item.id);
   });
 
 app.route('/v1/todos/:id')
@@ -47,9 +53,9 @@ app.route('/v1/todos/:id')
     console.log('GOT DELETE: ' + req.params.id);
   })
   .post(function(req, res){
-    console.log('GOT POST: ' + req.body._id);
+    console.log('GOT POST: ' + req.body.id);
   }).put(function(req, res){
-    console.log('GOT PUT: ' + req.body._id);
+    console.log('GOT PUT: ' + req.body.id);
   });
 
 

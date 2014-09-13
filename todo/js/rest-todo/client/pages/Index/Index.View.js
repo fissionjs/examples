@@ -60,7 +60,7 @@ module.exports = fission.collectionView({
     }
   },
   render: function() {
-    console.log(this.collection);
+
     var done = this.collection.filter(function(todo) {
       return todo.get('done');
     });
