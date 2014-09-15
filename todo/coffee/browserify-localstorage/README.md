@@ -1,6 +1,6 @@
-## Simple Todo
+## LocalStorage Todo
 
-- Memory store
+- localStorage
 - Coffee-Script
 
 
