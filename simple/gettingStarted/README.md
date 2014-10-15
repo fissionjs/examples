@@ -2,6 +2,6 @@
 
 This example follows the Fission docs.
 
-**bundle**: `$ browserify router.js > start.js
+**bundle**: `$ browserify router.js > start.js`
 
-**Serve**`: `$ python -m SimpleHTTPServer`
+**Serve**: `$ python -m SimpleHTTPServer`
