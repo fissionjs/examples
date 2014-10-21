@@ -7,9 +7,4 @@ fission.router.route '/',
   view: IndexView
   el: 'content'
 
-fission.router.route '*',
-  title: 'Not Found'
-  view: NotFoundView
-  el: 'content'
-
 fission.router.start()
