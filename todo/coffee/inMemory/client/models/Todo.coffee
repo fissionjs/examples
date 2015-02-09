@@ -1,10 +1,10 @@
-fission = require '../app'
+{model} = require 'fission'
+sync = require './sync'
 
-module.exports =
-
-  fission.model
-    props:
-      id: 'integer'
-      text: 'string'
-      done: 'boolean'
-    url: '/v1/todos'
+module.exports = model
+  props:
+    id: 'integer'
+    text: 'string'
+    done: 'boolean'
+  url: '/v1/todos'
+  sync: sync

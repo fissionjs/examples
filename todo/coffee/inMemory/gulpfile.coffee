@@ -16,7 +16,7 @@ paths =
   html: './client/*.html'
   stylus: './client/**/*.styl'
   public: './public'
-  coffeeSrc: './client/start.coffee'
+  coffeeSrc: './client/index.coffee'
 
 gulp.task 'server', (cb) ->
   require './start'
@@ -31,7 +31,7 @@ gulp.task 'coffee', ->
       extensions: ['.coffee']
     b.transform coffeeify
     b.bundle()
-    .pipe source "start.js"
+    .pipe source 'index.js'
     .pipe buffer()
     .pipe gulp.dest paths.public
     .pipe reload()
